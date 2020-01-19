@@ -35,7 +35,8 @@ npm run storybook
 
 - [x] Complete project skeleton and demo stories
 - [ ] Add more components
-- [ ] Polish UI style
-- [ ] Customized Theming policy
+- [ ] Polish UI
+- [ ] Customized Theming
+- [ ] Storybook TypeScript config
 - [ ] More Storybook Docs: [storybook-docs-addon](https://github.com/storybookjs/storybook/tree/master/addons/docs)
 - [ ] Testing
