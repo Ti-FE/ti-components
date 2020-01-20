@@ -4,8 +4,8 @@ import { Button } from '@storybook/react/demo'
 
 import { TiButton } from '../components'
 
-import '../index.css'
 import 'semantic-ui-css/semantic.min.css'
+import '../index.css'
 
 export default {
   title: 'Button',

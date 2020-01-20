@@ -56,6 +56,7 @@ body {
     'PingFangSC-Regular', 'Source Han Sans CN';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
 }
 
 code {
