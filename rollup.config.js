@@ -31,7 +31,7 @@ export default {
     resolve(),
     commonjs({
       namedExports: {
-        'node_modules/react-is/index.js': ['isElement', 'isValidElementType']
+        'react-is': ['isElement', 'isValidElementType']
       }
     }),
     typescript()
