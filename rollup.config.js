@@ -18,14 +18,12 @@ export default {
     {
       file: pkg.main,
       format: 'cjs',
-      globals,
       indent: false
     },
     // ES
     {
       file: pkg.module,
       format: 'es',
-      globals,
       indent: false
     }
   ],
