@@ -10,6 +10,12 @@ export default {
 
 export const Basic = () => <TiCard>Basic Card</TiCard>
 
+Basic.story = {
+  parameters: {
+    notes: 'A fluid card takes up the width of its container by default.'
+  }
+}
+
 export const Notifications = () => (
   <TiCard>
     <Feed>
