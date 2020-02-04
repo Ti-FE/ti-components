@@ -1,6 +1,7 @@
 # ti-components
 
 A customized style UI components library based on semantic-ui.
+
 This project uses [storybook](https://github.com/storybookjs/storybook) to organize, describe and preview components.
 
 ## Setup

@@ -1,55 +1,43 @@
 {
   "name": "ti-components",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/lib/index.js",
+  "module": "dist/lib/index.es.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "private": false,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "^3.3.0",
-    "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.2",
     "styled-components": "^5.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "build-storybook": "build-storybook -s public",
+    "build": "rollup -c",
+    "clean": "rimraf dist"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.3.6",
-    "@storybook/addon-docs": "^5.3.6",
-    "@storybook/addon-links": "^5.3.6",
-    "@storybook/addon-notes": "^5.3.6",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "@rollup/plugin-typescript": "^2.1.0",
     "@storybook/addons": "^5.3.6",
-    "@storybook/preset-create-react-app": "^1.5.1",
     "@storybook/react": "^5.3.6",
     "@types/jest": "^24.9.0",
-    "@types/node": "^10.17.11",
     "@types/react": "^16.8.18",
     "@types/react-dom": "^16.0.7",
     "@types/styled-components": "^4.4.2",
-    "typescript": "^3.5.1",
-    "typescript-plugin-styled-components": "^1.4.3"
+    "babel-loader": "^8.0.6",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.29.0",
+    "typescript": "^3.5.1"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }

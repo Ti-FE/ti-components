@@ -1,12 +1,11 @@
 import React from 'react'
-import { Card } from '@storybook/react/demo'
 
 import { Feed, Icon } from 'semantic-ui-react'
-import { TiCard } from '../components'
+import { TiCard } from '..'
 
 export default {
-  title: 'Card',
-  component: Card
+  title: 'TiCard',
+  component: TiCard
 }
 
 export const Basic = () => <TiCard>Basic Card</TiCard>
@@ -16,7 +15,7 @@ export const Notifications = () => (
     <Feed>
       <Feed.Event>
         <Feed.Label>
-          <Icon loading={true} name="spinner" />
+          <Icon loading name="spinner" />
         </Feed.Label>
         <Feed.Content>
           <Feed.Date content="1 second ago" />
