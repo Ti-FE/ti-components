@@ -2,7 +2,6 @@ import React from 'react'
 import { Button, ButtonProps } from 'semantic-ui-react'
 import styled from 'styled-components'
 
-// TODO: Theming config
 const StyledButton = styled(Button)`
   &&& {
     margin: 0.5em;
