@@ -1,13 +1,14 @@
 {
   "name": "ti-components",
-  "version": "0.1.0",
+  "version": "0.1.0-beta.0",
+  "description": "A Ti-Styled UI components library based on semantic-ui.",
+  "private": false,
   "main": "dist/lib/index.js",
   "module": "dist/lib/index.es.js",
   "files": [
     "dist",
     "src"
   ],
-  "private": false,
   "dependencies": {
     "semantic-ui-react": "^0.88.2",
     "styled-components": "^5.0.0"
@@ -15,6 +16,7 @@
   "scripts": {
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
+    "start": "rollup -w -c",
     "build": "rollup -c",
     "clean": "rimraf dist"
   },

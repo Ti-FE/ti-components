@@ -1,6 +1,6 @@
 # ti-components
 
-A customized style UI components library based on semantic-ui.
+A Ti-Styled UI components library based on semantic-ui.
 
 This project uses [storybook](https://github.com/storybookjs/storybook) to organize, describe and preview components.
 
@@ -26,10 +26,24 @@ or (with yarn)
 yarn
 ```
 
-### Run Storybook
+### Use Storybook
+
+First, run the following command to build the Components resources with [rollup.js](https://rollupjs.org/) and launch watch mode:
+
+```bash
+npm run start
+```
+
+Then, you can start storybook dev mode to view/add use stories of some implemented UI Components with the following command:
 
 ```bash
 npm run storybook
+```
+
+### Build
+
+```bash
+npm run build
 ```
 
 ## Roadmap
@@ -37,7 +51,7 @@ npm run storybook
 - [x] Complete project skeleton and demo stories
 - [ ] Add more components
 - [ ] Polish UI
-- [ ] Customized Theming
+- [ ] Better Theming and Styling policy
 - [ ] Storybook TypeScript config
-- [ ] More Storybook Docs: [storybook-docs-addon](https://github.com/storybookjs/storybook/tree/master/addons/docs)
+- [x] More Storybook Docs: [storybook-docs-addon](https://github.com/storybookjs/storybook/tree/master/addons/docs)
 - [ ] Testing
